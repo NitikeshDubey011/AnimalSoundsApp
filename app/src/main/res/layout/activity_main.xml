@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.AndroidApp.nitikesh.AnimalSoundApp.MainActivity">
+<android.support.v4.view.ViewPager
+    android:id="@+id/pager_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/wrapper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#A5333333"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtName"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:src="@drawable/ic_previou_assest"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#A5313231"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:src="@drawable/ic_next_assest"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#A5313231"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:id="@+id/sound_button"
+            android:src="@drawable/ic_sound_assest"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#FF313231"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</FrameLayout>
